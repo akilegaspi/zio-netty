@@ -81,9 +81,9 @@ object Channel {
         doSomethingWithChannel(_.remoteAddress())
       def unsafe(): Task[JChannel.Unsafe] =
         doSomethingWithChannel(_.unsafe())
-
     }
   }
+
   private def getEnv[R, E, A](f: Channel.Service => Task[A]): RIO[Channel, A] =
     RIO.accessM(env => f(env.get))
 
@@ -124,8 +124,6 @@ object Channel {
   def unsafe(): RIO[Channel, JChannel.Unsafe] =
     getEnv(_.unsafe())
 
-  
-
   object Unsafe {
     trait Service {
       def beginRead(): Task[Unit]
@@ -144,9 +142,8 @@ object Channel {
       def write(msg: JObject, promise: ChannelPromise): Task[Unit]
     }
 
-    def getEnv[A](f: Unsafe.Service => Task[A]): RIO[Unsafe, A] =
+    private def getEnv[A](f: Unsafe.Service => Task[A]): RIO[Unsafe, A] =
       RIO.accessM(env => f(env.get))
-
 
     def beginRead(): RIO[Unsafe, Unit] =
       getEnv(_.beginRead())
