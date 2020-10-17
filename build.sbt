@@ -15,8 +15,6 @@ developers := List(
   )
 )
 
-val zioVersion = "1.0.3"
-
 lazy val root = (project in file(".")).settings(
     name := "zio-netty",
     libraryDependencies := Dependencies.zio ++ Dependencies.netty,
