@@ -19,7 +19,7 @@ To begin contributing, please follow these steps:
 
 If you do not already have one, sign up for a free [GitHub Account](https://github.com/join?source=header-home).
 
-After you [log into](https://github.com/login) GitHub using your account, go to the [ZIO-Netty Project Page](https://github.com/zio/zio-netty), and click on [Fork](https://github.com/akilegaspi/zio-netty/fork) to fork the ZIO repository into your own account.
+After you [log into](https://github.com/login) GitHub using your account, go to the [ZIO-Netty Project Page](https://github.com/akilegaspi/zio-netty), and click on [Fork](https://github.com/akilegaspi/zio-netty/fork) to fork the ZIO repository into your own account.
 
 You will make _all_ contributions from your own account. No one contributes _directly_ to the main repository. Contributors only ever merge code from other people's forks into the main repository.
 
@@ -74,9 +74,9 @@ project coreJVM
 
 ### Find an Issue
 
-You may have your own idea about what contributions to make to ZIO-Netty, which is great! If you want to make sure the ZIO-Netty contributors are open to your idea, you can [open an issue](https://github.com/zio/zio/issues/new) first on the ZIO-Netty project site.
+You may have your own idea about what contributions to make to ZIO-Netty, which is great! If you want to make sure the ZIO-Netty contributors are open to your idea, you can [open an issue](https://github.com/akilegaspi/zio-netty/issues/new) first on the ZIO-Netty project site.
 
-Otherwise, if you have no ideas about what to contribute, you can find a large supply of feature requests and bugs on the project's [issue tracker](https://github.com/zio/zio/issues).
+Otherwise, if you have no ideas about what to contribute, you can find a large supply of feature requests and bugs on the project's [issue tracker](https://github.com/akilegaspi/zio-netty/issues).
 
 Issues are tagged with various labels, such as `good first issue`, which help you find issues that are a fit for you.
 
@@ -92,7 +92,7 @@ The only thing you have to worry about is if you take too long, especially for a
 
 If you shoot for 2-3 weeks for most issues, this should give you plenty of time without having to worry about having your issue stolen.
 
-If you get stuck, please consider [opening a pull request](https://github.com/zio/zio/compare) for your incomplete work, and asking for help (just prefix the pull request by _WIP_). In addition, you can comment on the original issue, pointing people to your own fork. Both of these are great ways to get outside help from people more familiar with the project.
+If you get stuck, please consider [opening a pull request](https://github.com/akilegaspi/zio-netty/compare) for your incomplete work, and asking for help (just prefix the pull request by _WIP_). In addition, you can comment on the original issue, pointing people to your own fork. Both of these are great ways to get outside help from people more familiar with the project.
 
 ### Prepare Your Code
 
@@ -107,7 +107,7 @@ git status
 If you see new files, you will have to tell `git` to add them to the repository using `git add`:
 
 ```bash
-git add core/src/shared/zio/zio/NewFile.scala
+git add src/main/scala/me/akilegaspi/YourChanges.scala
 ```
 
 Then you can commit all your changes at once with the following command:
@@ -127,7 +127,7 @@ Now while you were working on this great improvement, it's quite likely that oth
 To do that, use the `git pull` command:
 
 ```bash
-git pull git@github.com:zio/zio.git master
+git pull git@github.com:akilegaspi/zio-netty.git master
 ```
 
 You may get a warning from Git that some files conflicted. Don't worry! That just means you and another contributor edited the same parts of the same files.
@@ -184,7 +184,7 @@ To create a pull request, first push all your changes to your fork of the projec
 git push
 ```
 
-Next, [open a new pull request](https://github.com/zio/zio/compare) on GitHub, and select _Compare Across Forks_. On the right hand side, choose your own fork of the ZIO-Netty repository, in which you've been making your contribution.
+Next, [open a new pull request](https://github.com/akilegaspi/zio-netty/compare) on GitHub, and select _Compare Across Forks_. On the right hand side, choose your own fork of the ZIO-Netty repository, in which you've been making your contribution.
 
 Provide a description for the pull request, which details the issue it is fixing, and has other information that may be helpful to developers reviewing the pull request.
 
@@ -224,7 +224,7 @@ This is a legally binding document, so please read it carefully before accepting
 
 ## 1. Definitions
 
-"We" or "Us" means Ziverge, Inc., and its duly appointed and authorized representatives.
+"We" or "Us" means the current project owner and maintainer/s.
 
 "You" means the individual or entity who Submits a Contribution to Us.
 
